@@ -15,4 +15,5 @@
     <file type="web" url="file://$PROJECT_DIR$/Thread-Service" />
     <file type="web" url="file://$PROJECT_DIR$/User-Service" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK" />
 </project>
