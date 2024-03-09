@@ -1,6 +1,5 @@
 package com.se.authservice.payload;
 
-
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
