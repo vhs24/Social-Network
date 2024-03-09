@@ -23,18 +23,27 @@ public class UserServiceRestTemplateClient {
 	@Autowired
 	RestTemplate restTemplate;
 	
-	public Object saveUser(UserRequestDto userRequestDto) {
+	@Autowired
+	ObjectMapper mapper;
+	
+	public Object saveUser(UserRequestDto userRequestDto) throws JsonProcessingException {
+		
+		String requestJson = mapper.writeValueAsString(userRequestDto);
+		
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);
+		
+		HttpEntity<String> entity = new HttpEntity<String>(requestJson,headers);
+		
 		ResponseEntity<?> restExchange =
-                restTemplate.exchange(
+                restTemplate.postForEntity(
                         "http://localhost:8088/user/internal/save",
-                        HttpMethod.POST,
-                        null, ApiResponseEntity.class, userRequestDto);
+                        entity,
+                        ApiResponseEntity.class);
         return restExchange.getBody();
 	}
 	
 	public Object findByEmail(String email) {
-		Map<String, String> uriVariables = new HashMap<>();
-		uriVariables.put("email", email);
 		
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -44,7 +53,6 @@ public class UserServiceRestTemplateClient {
 
 		HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
 
-		
 		ResponseEntity<?> restExchange =
                 restTemplate.postForEntity(
                         "http://localhost:8088/user/internal/findByEmail",
@@ -54,26 +62,37 @@ public class UserServiceRestTemplateClient {
 	}
 	
 	public Object findById(Long id) {
-		Map<String, Long> uriVariables = new HashMap<>();
-		uriVariables.put("id", id);
+		
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
+		MultiValueMap<String, Long> map= new LinkedMultiValueMap<String, Long>();
+		map.add("id", id);
+
+		HttpEntity<MultiValueMap<String, Long>> request = new HttpEntity<MultiValueMap<String, Long>>(map, headers);
 		
 		ResponseEntity<?> restExchange =
-                restTemplate.exchange(
+                restTemplate.postForEntity(
                         "http://localhost:8088/user/internal/findById",
-                        HttpMethod.POST,
-                        null, ApiResponseEntity.class, uriVariables);
+                        request,
+                        ApiResponseEntity.class);
         return restExchange.getBody();
 	}
 
 	public Boolean existsByEmail(String email) {
-		Map<String, String> uriVariables = new HashMap<>();
-		uriVariables.put("email", email);
-		
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
+		MultiValueMap<String, String> map= new LinkedMultiValueMap<String, String>();
+		map.add("email", email);
+
+		HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
+
 		ResponseEntity<?> restExchange =
-                restTemplate.exchange(
+                restTemplate.postForEntity(
                         "http://localhost:8088/user/internal/existsByEmail",
-                        HttpMethod.POST,
-                        null, Boolean.class, uriVariables);
+                        request,
+                        ApiResponseEntity.class);
         return (Boolean) restExchange.getBody();
 	}
 }
