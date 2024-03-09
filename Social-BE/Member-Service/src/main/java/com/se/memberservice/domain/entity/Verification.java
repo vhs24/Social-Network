@@ -1,5 +1,6 @@
 package com.se.memberservice.domain.entity;
 
+
 import java.util.Date;
 
 import jakarta.persistence.Entity;
@@ -12,18 +13,18 @@ import lombok.Data;
 @Entity
 public class Verification {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer verifiId;
-
-    private Integer memberId;
-
-    private String token;
-
-    private Date expirationTime;
-
-    private Byte validFlg;
-
-    private Byte delFlg;
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer verifiId;
+	
+	private Integer memberId;
+	
+	private String token;
+	
+	private Date expirationTime;
+	
+	private Byte validFlg;
+	
+	private Byte delFlg;
+	
 }

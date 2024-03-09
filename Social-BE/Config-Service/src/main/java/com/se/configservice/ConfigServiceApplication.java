@@ -1,4 +1,4 @@
-package com.se.configservice;
+package com.se1.configservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

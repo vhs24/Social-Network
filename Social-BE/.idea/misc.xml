@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/Config-Service" />
-    <file type="web" url="file://$PROJECT_DIR$/Member-Service" />
-    <file type="web" url="file://$PROJECT_DIR$/Post-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/ApiGateway-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Auth-Service" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK" />
 </project>

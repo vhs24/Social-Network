@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="064979bb-5b95-435b-9ce8-025c61427178" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Config-Service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config-Service/src/main/java/com/se/configservice/ConfigServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config-Service/src/main/resources/config/member-service-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Config-Service/src/main/resources/config/member-service-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config-Service/src/main/resources/config/member-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Config-Service/src/main/resources/config/member-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config-Service/src/test/java/com/se/configservice/ConfigServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Member-Service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/MemberServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/api/internalApi/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/domain/entity/Authorization.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/domain/entity/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/domain/entity/Verification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/domain/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/domain/request/dto/MemberLoginRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/domain/request/dto/MemberRegisRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/domain/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/domain/service/impl/MemberServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/main/java/com/se/memberservice/model/db/read/GetMemberMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member-Service/src/test/java/com/se1/memberservice/MemberServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Member-Service/src/test/java/com/se1/memberservice/MemberServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Post-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Post-Service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Post-Service/src/main/java/com/se/postservice/PostServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Post-Service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Post-Service/src/test/java/com/se/postservice/PostServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init/1.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/ApiGateway-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Auth-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Chat-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Comment-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Config-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Eureka-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Forum-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Member-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Post-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/System-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Thread-Service">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2dQlwVN3KmNaAy6SdY3ZQpSKO14" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="064979bb-5b95-435b-9ce8-025c61427178" name="Default Changelist" comment="" />
+      <created>1709948433031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709948433031</updated>
+      <workItem from="1709948437532" duration="677000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
