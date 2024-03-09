@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="99f97707-0ba5-43b0-aa3d-fb03e8706718" name="Default Changelist" comment="add dto for comment service">
+      <change afterPath="$PROJECT_DIR$/Post-Service/src/main/java/com/se1/postservice/api/internalApi/PostExternalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post-Service/src/main/java/com/se1/postservice/domain/payload/GetPostResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/se1/userservice/model/Licence.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/se1/userservice/model/Licence.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/ApiGateway-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Auth-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Chat-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Comment-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Config-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Eureka-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Forum-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Member-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Post-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/System-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Thread-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/User-Service">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2dRarEi8Cjr4TT3yapxb726bdhq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Post-Service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.se1.postservice.PostServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99f97707-0ba5-43b0-aa3d-fb03e8706718" name="Default Changelist" comment="" />
+      <created>1709973548906</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709973548906</updated>
+      <workItem from="1709973553691" duration="2256000" />
+      <workItem from="1709975998272" duration="1393000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix Cors api gateway service">
+      <created>1709975645729</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709975645729</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update post service">
+      <created>1709976176673</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709976176673</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add dto for comment service">
+      <created>1709976627548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709976627548</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix Cors api gateway service" />
+    <MESSAGE value="update post service" />
+    <MESSAGE value="add dto for comment service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dto for comment service" />
+  </component>
+</project>
