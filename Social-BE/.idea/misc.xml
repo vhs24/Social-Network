@@ -4,6 +4,15 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ApiGateway-Service" />
     <file type="web" url="file://$PROJECT_DIR$/Auth-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Chat-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Comment-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Config-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Eureka-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Forum-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Member-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Post-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/System-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/Thread-Service" />
+    <file type="web" url="file://$PROJECT_DIR$/User-Service" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK" />
 </project>
