@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99f97707-0ba5-43b0-aa3d-fb03e8706718" name="Default Changelist" comment="update post service">
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/se1/commentservice/domain/dto/CommentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/se1/commentservice/domain/dto/CommentResponse.java" afterDir="false" />
+    <list default="true" id="99f97707-0ba5-43b0-aa3d-fb03e8706718" name="Default Changelist" comment="add dto for comment service">
+      <change afterPath="$PROJECT_DIR$/Post-Service/src/main/java/com/se1/postservice/api/internalApi/PostExternalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post-Service/src/main/java/com/se1/postservice/domain/payload/GetPostResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/se1/userservice/model/Licence.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/se1/userservice/model/Licence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709973548906</updated>
       <workItem from="1709973553691" duration="2256000" />
-      <workItem from="1709975998272" duration="574000" />
+      <workItem from="1709975998272" duration="1393000" />
     </task>
     <task id="LOCAL-00001" summary="fix Cors api gateway service">
       <created>1709975645729</created>
@@ -138,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709976176673</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add dto for comment service">
+      <created>1709976627548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709976627548</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +167,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix Cors api gateway service" />
     <MESSAGE value="update post service" />
-    <option name="LAST_COMMIT_MESSAGE" value="update post service" />
+    <MESSAGE value="add dto for comment service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dto for comment service" />
   </component>
 </project>
