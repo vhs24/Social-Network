@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Stomp from 'stompjs';
-
+import { StompSessionProvider, useSubscription } from 'react-stomp-hooks';
+import { notificationController } from '@app/controllers/notificationController';
 // no lazy loading for auth pages to avoid flickering
 const AuthLayout = React.lazy(() => import('@app/components/layouts/AuthLayout/AuthLayout'));
 import LoginPage from '@app/pages/LoginPage';
@@ -17,6 +17,12 @@ import { withLoading } from '@app/hocs/withLoading.hoc';
 import Dashboard from '@app/pages/DashBoard/DashBoard';
 import Profile from '@app/pages/ProfilePage/ProfilePage';
 import ListFriendPage from '@app/pages/HistoryPage/ListFriendPage';
+import ChatPage from '@app/pages/ChatPage/ChatPage';
+import AboutUs from '@app/pages/AboutUs/AboutUs';
+import UserManager from '@app/pages/UserManager/UserManager';
+import PostManager from '@app/pages/PostManager/PostManager';
+import TopicManager from '@app/pages/TopicManager/TopicManager';
+import AccessRoleManager from '@app/pages/AccessRoleManager/AccessRoleManager';
 const DataTablesPage = React.lazy(() => import('@app/pages/DataTablesPage'));
 const ChartsPage = React.lazy(() => import('@app/pages/ChartsPage'));
 const ServerErrorPage = React.lazy(() => import('@app/pages/ServerErrorPage'));
@@ -27,7 +33,6 @@ const Logout = React.lazy(() => import('./Logout'));
 
 export const NFT_DASHBOARD_PATH = '/';
 export const MEDICAL_DASHBOARD_PATH = '/medical-dashboard';
-
 const AdvancedForm = withLoading(AdvancedFormsPage);
 
 const DataTables = withLoading(DataTablesPage);
@@ -45,18 +50,57 @@ export const AppRouter: React.FC = () => {
       <MainLayout />
     </RequireAuth>
   );
+  const [userInfo, setUserInfo] = useState('');
+  useEffect(() => {
+    const UserData = localStorage.getItem('UserData');
+    const UserInfo = JSON.parse(UserData);
+    setUserInfo(UserInfo?.topicId);
+  }, []);
+  useSubscription(`/topic/user/${userInfo}`, (message: any) => {
+    console.log(message);
+    const body = JSON.parse(message.body);
+    const actionSender = JSON.parse(body.value);
+    const senderInfo = JSON.parse(actionSender.userSender);
+    let action = '';
+    switch (actionSender.action) {
+      case 'unfiend':
+        action = 'Unfiend';
+        break;
+      case 'request-friend':
+        action = 'Send Request Friend';
+        break;
+      case 'accept-friend':
+        action = 'Accept Friend';
+        break;
+      case 'subscribed':
+        action = 'Subscribed';
+        break;
+      default:
+        break;
+    }
 
+    notificationController.success({
+      message: `${senderInfo.name} Had ${action} ${body.user.name}`,
+    });
+  });
   return (
     <BrowserRouter>
       <Routes>
         <Route path={NFT_DASHBOARD_PATH} element={protectedLayout}>
-          <Route index element={<Dashboard />} />
+          <Route index element={<AboutUs />} />
           <Route path="forms">
             <Route path="advanced-forms" element={<AdvancedForm />} />
           </Route>
           <Route path="data-tables" element={<DataTables />} />
           <Route path="list-friend" element={<ListFriendPage />} />
           <Route path="profile-page" element={<Profile />} />
+          <Route path="profile-page/:id" element={<Profile />} />
+          <Route path="chat-center" element={<ChatPage />} />
+          <Route path="dashboard" element={<Dashboard />} />
+
+          <Route path="/user-page" element={<UserManager />} />
+          <Route path="/post-page" element={<PostManager />} />
+          <Route path="/topic-page" element={<TopicManager />} />
 
           <Route path="server-error" element={<ServerError />} />
           <Route path="404" element={<Error404 />} />
